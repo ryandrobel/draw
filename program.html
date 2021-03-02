@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <meta charset="UTF-8">
+        <meta charset="UTF-8">
        <title>Draw</title>
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -11,16 +11,33 @@
       <div class="wrapper">
         <nav>
           <ul>
-            <li><span id="trackX"></span></li>
-            <li><span id="trackY"></span></li>
+            <li><span id="trackX">X: 0</span></li>
+            <li><span id="trackY">Y: 0</span></li>
+            <li>
+                <p>
+                    Select a fill color: 
+                    <input type="color" id="colorpicker" value="#0000ff">
+                </p>
+                <p>
+                    Select a stroke color:  
+                    <input type="color" id="colorpicker2" value="#0000ff">
+                </p>
+        
+            </li>
             <li><button id="btnRect">Rectangle</button></li>
+            <li><button id="btnTriangle">Triangle</button></li>
             <li><button id="btnLine">Line</button></li>
             <li><button id="btnCircle">Circle</button></li>
             <li><button id="btnPath">Path</button></li>
+
+
           </ul>
         </nav>
         <main></main>
+
       </div>
-      <script src="src/js/main.js"></script>
+
+        <script src="src/js/main.js"></script>
+
     </body>
 </html>
